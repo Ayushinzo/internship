@@ -225,7 +225,7 @@ This project leverages a modern tech stack to ensure scalability, maintainabilit
    - **Usage**: Created routes for authentication (`auth.js`) and feedback (`feedback.js`).
 
 3. **MongoDB**
-   - **Why?**: NoSQL database for flexible and scalable data storage.
+   - **Why?**: MongoDB database for flexible and scalable data storage.
    - **Usage**: Stored user data and feedback in collections.
 
 4. **Mongoose**
