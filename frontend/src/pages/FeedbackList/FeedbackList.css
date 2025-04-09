@@ -1,0 +1,66 @@
+.feedback-list h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+    text-underline-offset: .4rem;
+}
+
+.feedback-container {
+    margin-top: 2rem;
+    border: 2px solid red;
+    padding: .5rem;
+    height: 50rem;
+    overflow: scroll;
+}
+
+.feedback-container .p {
+   min-width: 112rem;
+   height: 90%;
+}
+
+.feedback-container .p .feed {
+    display: grid;
+    grid-template-columns: .5fr 2fr 2fr 3fr 6fr;
+    width: 100%;
+}
+
+.feedback-container .p .heading {
+    background-color: rgb(142, 142, 142);
+    padding: 1.5rem .8rem;
+    width: 100%;
+}
+
+.feedback-container .p .user-feedback {
+    padding: .5rem 0;
+    width: 100%;
+}
+
+.feedback-container .p .user-feedback p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.feedback-container .p .heading p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.feedback-container .p .feed p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-feedback {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-feedback h2 {
+    background: red;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+}

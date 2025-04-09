@@ -1,0 +1,97 @@
+.feedback-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(139, 139, 139, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.feedback-form .feedbackContainer {
+    width: 35rem;
+    padding: 1.5rem;
+    background: white;
+}
+
+.feedback-form .feedbackContainer .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback-form .feedbackContainer .head h2 {
+    font-size: 2.5rem;
+}
+
+.feedback-form .feedbackContainer .head .feed-cancel {
+    font-size: 3rem;
+    cursor: pointer;
+    padding: .2rem;
+}
+
+.feedback-form .feedbackContainer h3 {
+    margin-top: .5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: red;
+}
+
+.feedback-form .feedbackContainer .form input,
+.feedback-form .feedbackContainer .form textarea,
+.feedback-form .feedbackContainer .form button {
+    width: 100%;
+    margin-top: 1.3rem;
+    padding: .8rem;
+    outline: none;
+    border: 2px solid black;
+}
+
+.feedback-form .feedbackContainer .form textarea {
+    height: 13rem;
+    resize: none;
+}
+
+.feedback-form .feedbackContainer .form button {
+    background: red;
+    border: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    justify-content: center;
+}
+
+.feedback-form .feedbackContainer .form button .f-loader {
+    font-size: 1.8rem;
+    animation-name: rotate;
+    animation-duration: .4s;
+    font-weight: 600;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
+}
+
+.feedback-form .feedbackContainer .form button .f-loader.active {
+    display: block;
+}
+
+.feedback-form .feedbackContainer .form form button.active{
+    opacity: .5;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

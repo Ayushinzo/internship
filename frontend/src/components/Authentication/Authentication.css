@@ -1,0 +1,109 @@
+.auth {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(46, 46, 46, 0.6);
+    z-index: 100;
+    padding: 2rem 3rem;
+}
+
+.auth>p {
+    text-align: right;
+}
+
+.auth .sub-auth .pp p:first-child {
+    text-align: right;
+}
+
+.auth .sub-auth .pp p .auth-cancle {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.auth .sub-auth {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth .sub-auth .pp {
+    max-width: 30rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.auth .sub-auth .pp h3 {
+    font-size: 2.2rem;
+}
+
+.auth .sub-auth .pp form>input,
+.auth .sub-auth .pp form button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: .8rem;
+    outline: none;
+    border: 1px solid red;
+}
+
+.auth .sub-auth .pp form button {
+    background: red;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.auth .sub-auth .pp form button.active {
+    opacity: .5;
+}
+
+.auth .sub-auth .pp form button .loadAuth {
+    font-size: 1.8rem;
+    animation-name: rotateAuth;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
+}
+
+.auth .sub-auth .pp form button .loadAuth.active {
+    display: block;
+}
+
+.auth .sub-auth .pp .checkbox {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.auth .sub-auth .pp .bot {
+    margin-top: .6rem;
+}
+
+.auth .sub-auth .pp .bot span {
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: .3rem;
+    cursor: pointer;
+}
+
+.auth .sub-auth .pp form p {
+    font-size: 1.1rem;
+}
+
+@keyframes rotateAuth {
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

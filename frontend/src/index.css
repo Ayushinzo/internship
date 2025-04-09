@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --color: 'gray';
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  font-size: 65%;
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .main {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .products .sub {
+    grid-template-columns: auto auto !important;
+    gap: 4rem !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar .menu {
+    display: block !important;
+  }
+
+  .products .sub {
+    grid-template-columns: auto !important;
+  }
+
+  .navbar .items {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    padding: 2.5rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path .2s linear;
+  }
+
+  .navbar .items.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .navbar .items ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .items ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar .items ul li a {
+    color: white;
+    display: block;
+    padding: 1rem;
+  }
+}
